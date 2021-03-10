@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+// Layout for the main categories page
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        //Username layout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/username_view">
+
+                //Username view
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="28sp"
+                    android:text="username"/>
+        </LinearLayout>
+
+        // Categories heading layout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:background="@drawable/category_heading_view">
+
+            // Categories heading view
+            <TextView
+                android:id="@+id/categoryHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="67dp"
+                android:textSize="28sp"
+                android:text="CHOOSE A CATEGORY:"/>
+        </LinearLayout>
+
+        //Category items group
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+<!--                            // image-->
+<!--                            <ImageView-->
+<!--                                android:id="@+id/teamsImage"-->
+<!--                                android:layout_width="80dp"-->
+<!--                                android:layout_height="80dp"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_alignParentLeft="true" />-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/playersImage"-->
+<!--                                android:layout_width="80dp"-->
+<!--                                android:layout_height="80dp"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_below="@id/teamsImage"/>-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/managersImage"-->
+<!--                                android:layout_width="80dp"-->
+<!--                                android:layout_height="80dp"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_below="@id/playersImage"/>-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/competitionsImage"-->
+<!--                                android:layout_width="80dp"-->
+<!--                                android:layout_height="80dp"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_below="@id/managersImage"/>-->
+
+<!--                            <com.google.android.material.button.MaterialButtonToggleGroup-->
+<!--                                xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                                android:id="@+id/toggle_button_group"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="320dp"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:gravity="center_horizontal"-->
+<!--                                android:layout_toEndOf="@id/playersImage"-->
+<!--                                android:layout_toRightOf="@id/playersImage">-->
+
+<!--                                <com.google.android.material.button.MaterialButton-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="80dp"-->
+<!--                                    app:cornerRadius="15dp"-->
+<!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                                    android:text="TEAMS"/>-->
+
+<!--                                <com.google.android.material.button.MaterialButton-->
+<!--                                style="@style/Widget.MaterialComponents.Button"-->
+<!--                                app:cornerRadius="50dp"/>-->
+
+<!--                                <com.google.android.material.button.MaterialButton-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"/>-->
+
+<!--                                <com.google.android.material.button.MaterialButton-->
+<!--                                    style="?attr/materialButtonOutlinedStyle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"/>-->
+
+<!--                                <com.google.android.material.button.MaterialButton-->
+<!--                                    style="?attr/materialButtonOutlinedStyle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"/>-->
+
+<!--                            </com.google.android.material.button.MaterialButtonToggleGroup>-->
+
+<!--                        </RelativeLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                // image
+                <ImageView
+                    android:id="@+id/teamsImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/teamsImage"
+                    app:cornerRadius="15dp"
+                    android:text="TEAMS"
+                    android:textSize="28sp"
+                    android:layout_toRightOf="@id/teamsImage" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                // image
+                <ImageView
+                    android:id="@+id/playerImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/playerImage"
+                    app:cornerRadius="15dp"
+                    android:text="PLAYERS"
+                    android:textSize="28sp"
+                    android:layout_toRightOf="@id/playerImage" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                // image
+                <ImageView
+                    android:id="@+id/managersImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/managersImage"
+                    app:cornerRadius="15dp"
+                    android:text="MANAGERS"
+                    android:textSize="28sp"
+                    android:layout_toRightOf="@id/managersImage" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                // image
+                <ImageView
+                    android:id="@+id/competitionImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/competitionImage"
+                    app:cornerRadius="15dp"
+                    android:text="COMPETITIONS"
+                    android:textSize="28sp"
+                    android:layout_toRightOf="@id/competitionImage" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            app:cardBackgroundColor="@color/white">-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+    </LinearLayout>
+
+</LinearLayout>
