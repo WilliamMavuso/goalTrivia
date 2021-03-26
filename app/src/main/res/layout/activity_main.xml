@@ -165,7 +165,7 @@
                     app:cornerRadius="15dp"
                     android:text="TEAMS"
                     android:textSize="28sp"
-                    android:layout_toRightOf="@id/teamsImage" />
+                    android:layout_toRightOf="@id/teamsImage"/>
 
             </RelativeLayout>
 
