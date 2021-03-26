@@ -18,7 +18,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 <!-- 3. solid or fill element-->
-    <solid android:color="@color/teal_200"/>
+    <solid/>
     <size android:height="89dp"
             android:width="50dp"/>
     <!-- 4. stroke element-->
